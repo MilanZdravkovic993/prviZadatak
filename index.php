@@ -3,22 +3,22 @@
 
  $prvi = new Circle("krug",5);
  echo ($prvi->name);
- echo "<br>";
+ echo("\n");
  echo ($prvi->circumference());
- echo "<br>";
+ echo("\n");
  echo ($prvi->area());
- echo "<br>";
+ echo("\n");
  $drugi = new Triangle("Trougao", 4 , 4, 4);
  echo ($drugi->name);
- echo "<br>";
+ echo("\n");
  echo ($drugi->circumference());
- echo "<br>";
+ echo("\n");
  echo ($drugi->area());
- echo "<br>";
+ echo("\n");
  $treci = new Rectangle("Pravougaonik", 3,4);
  echo ($treci->name);
- echo "<br>";
+ echo("\n");
  echo ($treci->circumference());
- echo "<br>";
+ echo("\n");
  echo ($treci->area());
 ?>
