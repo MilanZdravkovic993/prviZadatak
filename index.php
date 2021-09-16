@@ -1,6 +1,6 @@
 <?php
  require 'autoloader.php';
-
+//Just creating instances of Classes and echoing values of Area and Circumference 
  $shapeA = new Circle("Circle",5);
  echo ($shapeA->name);
  echo("\n Circumference:");
