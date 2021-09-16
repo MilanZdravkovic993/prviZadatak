@@ -1,7 +1,5 @@
 <?php
- require_once 'shape.php';
- require_once 'circle.php';
- require_once 'triangle.php';
+ require 'autoloader.php';
 
  $prvi = new Circle("krug",5);
  echo ($prvi->name);
@@ -16,4 +14,11 @@
  echo ($drugi->circumference());
  echo "<br>";
  echo ($drugi->area());
+ echo "<br>";
+ $treci = new Rectangle("Pravougaonik", 3,4);
+ echo ($treci->name);
+ echo "<br>";
+ echo ($treci->circumference());
+ echo "<br>";
+ echo ($treci->area());
 ?>

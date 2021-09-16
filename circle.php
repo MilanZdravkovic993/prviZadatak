@@ -1,6 +1,5 @@
 <?php 
-require_once 'shape.php';
-require_once 'formulas.php';
+require 'autoloader.php';
 class Circle extends Shape implements Formulas{
     public  $diametar;
     
