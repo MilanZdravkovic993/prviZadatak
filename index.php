@@ -1,24 +1,31 @@
 <?php
  require 'autoloader.php';
 
- $prvi = new Circle("krug",5);
- echo ($prvi->name);
+ $shapeA = new Circle("Circle",5);
+ echo ($shapeA->name);
+ echo("\n Circumference:");
+ echo ($shapeA->circumference());
+ echo("\n Area:");
+ echo ($shapeA->area());
  echo("\n");
- echo ($prvi->circumference());
+ $shapeB = new Triangle("Triangle", 4 , 4, 4);
+ echo ($shapeB->name);
+ echo("\n Circumference:");
+ echo ($shapeB->circumference());
+ echo("\n Area:");
+ echo ($shapeB->area());
  echo("\n");
- echo ($prvi->area());
+ $shapeC = new Rectangle("Rectangular", 3,4);
+ echo ($shapeC->name);
+ echo("\n Circumference:");
+ echo ($shapeC->circumference());
+ echo("\n Area:");
+ echo ($shapeC->area());
  echo("\n");
- $drugi = new Triangle("Trougao", 4 , 4, 4);
- echo ($drugi->name);
- echo("\n");
- echo ($drugi->circumference());
- echo("\n");
- echo ($drugi->area());
- echo("\n");
- $treci = new Rectangle("Pravougaonik", 3,4);
- echo ($treci->name);
- echo("\n");
- echo ($treci->circumference());
- echo("\n");
- echo ($treci->area());
+ $shapeD = new Square("Square", 3);
+ echo ($shapeD->name);
+ echo("\n Circumference:");
+ echo ($shapeD->circumference());
+ echo("\n Area:");
+ echo ($shapeD->area());
 ?>
