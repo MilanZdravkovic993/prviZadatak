@@ -13,15 +13,7 @@ class Rectangle extends Shape implements Formulas{
         $this->height = $paramB;
     }
 
-    public function getName(){
-        if(isset($this->name)){
-            return $this->name;
-        }
-        else
-        {
-        echo "Name is not set";
-        }
-    }
+   
     
     public function circumference()
     {

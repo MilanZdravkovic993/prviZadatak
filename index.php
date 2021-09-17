@@ -1,7 +1,6 @@
 <?php
  require 'autoloader.php';
- use \Vendor\App\Circle, \Vendor\App\Rectangle, \Vendor\App\Square, \Vendor\App\Triangle;
-use Vendor\App\Formulas;
+ use \Vendor\App\{Circle,Formulas,Rectangle,Triangle,Square,Shape};
 
 //Creating instances of Classes
  $shapeA = new Circle(5);
