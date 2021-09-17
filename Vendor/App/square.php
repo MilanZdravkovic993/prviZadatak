@@ -1,7 +1,8 @@
 <?php
-require 'autoloader.php';
+namespace Vendor\App;
+
 class Square extends Shape implements Formulas{
-    public  $width;
+    private  $width;
     public function __construct($name, $paramA )
     {
         $this->name = $name;

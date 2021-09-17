@@ -1,12 +1,13 @@
 <?php 
-require 'autoloader.php';
+namespace Vendor\App;
+
 class Triangle extends Shape implements Formulas{
 
-    public $sideA;
-    public $sideB;
-    public $sideC;
+    private $sideA;
+    private $sideB;
+    private $sideC;
 
-    public function __construct($name,int $paramA,int $paramB,int $paramC)
+    public function __construct($name, $paramA, $paramB, $paramC)
     {
         $this->name = $name;
         $this->sideA = $paramA;
