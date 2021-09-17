@@ -1,9 +1,9 @@
 <?php 
-require 'autoloader.php';
+namespace Vendor\App;
 class Circle extends Shape implements Formulas{
-    public  $diametar;
+    private  $diametar;
     
-    public function __construct($name,int $param)
+    public function __construct($name, $param)
     {
         $this->name = $name;
         $this->diametar = $param;

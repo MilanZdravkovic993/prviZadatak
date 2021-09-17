@@ -1,9 +1,16 @@
 <?php
-
-spl_autoload_register(
-    function ($class_name) {
-        $class_name = strtolower($class_name);
-        $class_name=str_replace('\\','/',$class_name);
-        require_once($class_name . ".php");
+function autoload($className){
+    $className = ltrim($className, '\\');
+    $fileName = '';
+    $namespace = '';
+    if($lastNsPos = strrpos($className, '\\')){
+        $namespace = substr($className, 0, $lastNsPos);
+        $className = substr($className, $lastNsPos + 1);
+        $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
     }
-);
+    $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+
+    require $fileName;
+}   
+
+spl_autoload_register('autoload');

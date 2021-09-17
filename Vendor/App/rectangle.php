@@ -1,8 +1,9 @@
 <?php 
-require 'autoloader.php';
+namespace Vendor\App;
+
 class Rectangle extends Shape implements Formulas{
-    public  $width;
-    public  $height;
+    private  $width;
+    private  $height;
     public function __construct($name, $paramA, $paramB )
     {
         $this->name = $name;
