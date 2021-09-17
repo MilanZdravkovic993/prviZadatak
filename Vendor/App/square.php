@@ -8,10 +8,7 @@ class Square extends Shape implements Formulas{
         $this->name = $name;
         $this->width = $paramA;
     }
-    public function getName()
-    {
-        return $this->name;
-    }
+    
     public function circumference()
     {
         return (4*$this->width);

@@ -13,10 +13,7 @@ class Rectangle extends Shape implements Formulas{
         $this->height = $paramB;
     }
 
-    public function getName()
-    {
-        return ($this->name);
-    }
+  
     
     public function circumference()
     {
