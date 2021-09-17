@@ -1,6 +1,6 @@
 <?php
 namespace Vendor\App;
     class Shape{
-        private $name; 
+        protected $name; 
 }
 ?>
