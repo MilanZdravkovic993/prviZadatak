@@ -1,34 +1,36 @@
 <?php
  require 'autoloader.php';
-//Just creating instances of Classes
- $shapeA = new Vendor\App\Circle("Circle",5);
- $shapeB = new Vendor\App\Triangle("Triangle", 4 , 4, 4);
- $shapeC = new Vendor\App\Rectangle("Rectangular", 3,4);
- $shapeD = new Vendor\App\Square("Square", 3);
+ use \Vendor\App\Circle, \Vendor\App\Rectangle, \Vendor\App\Square, \Vendor\App\Triangle;
 
- //Echoing Area and Circumference
- echo ($shapeA->name);
+//Creating instances of Classes
+ $shapeA = new Circle("Circle", 5);
+ $shapeB = new Triangle("Triangle", 4, 4, 4);
+ $shapeC = new Rectangle("Rectangle", 3, 4);
+ $shapeD = new Square("Square", 3);
+
+ //Echoing Area and Circumference for first shape
+ echo ($shapeA->getName());
  echo("\n Circumference:");
  echo ($shapeA->circumference());
  echo("\n Area:");
  echo ($shapeA->area());
  echo("\n");
- 
- echo ($shapeB->name);
+//Echoing Area and Circumference for second shape
+ echo ($shapeB->getName());
  echo("\n Circumference:");
  echo ($shapeB->circumference());
  echo("\n Area:");
  echo ($shapeB->area());
  echo("\n");
- 
- echo ($shapeC->name);
+//Echoing Area and Circumference for third shape
+ echo ($shapeC->getName());
  echo("\n Circumference:");
  echo ($shapeC->circumference());
  echo("\n Area:");
  echo ($shapeC->area());
  echo("\n");
- 
- echo ($shapeD->name);
+//Echoing Area and Circumference for fourth shape
+ echo ($shapeD->getName());
  echo("\n Circumference:");
  echo ($shapeD->circumference());
  echo("\n Area:");
