@@ -6,14 +6,22 @@ class Rectangle extends Shape implements Formulas{
     private  $width;
     private  $height;
    
-   public function __construct($name, $paramA, $paramB)
+   public function __construct($paramA, $paramB)
     {
-        $this->name = $name;
+        $this->name = "Rectangle";
         $this->width = $paramA;
         $this->height = $paramB;
     }
 
-  
+    public function getName(){
+        if(isset($this->name)){
+            return $this->name;
+        }
+        else
+        {
+        echo "Name is not set";
+        }
+    }
     
     public function circumference()
     {

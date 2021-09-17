@@ -3,12 +3,20 @@ namespace Vendor\App;
 class Circle extends Shape implements Formulas{
     private  $diametar;
     
-    public function __construct($name, $param)
+    public function __construct($param)
     {
-        $this->name = $name;
+        $this->name = "Circle";
         $this->diametar = $param;
     }
-   
+    public function getName(){
+        if(isset($this->name)){
+            return $this->name;
+        }
+        else
+        {
+        echo "Name is not set";
+        }
+    }
     public function circumference()
     {
         return ($this->diametar * 3.14 * 2);

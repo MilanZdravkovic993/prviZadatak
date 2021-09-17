@@ -3,12 +3,20 @@ namespace Vendor\App;
 
 class Square extends Shape implements Formulas{
     private  $width;
-    public function __construct($name, $paramA )
+    public function __construct($paramA )
     {
-        $this->name = $name;
+        $this->name = "Square";
         $this->width = $paramA;
     }
-    
+    public function getName(){
+        if(isset($this->name)){
+            return $this->name;
+        }
+        else
+        {
+        echo "Name is not set";
+        }
+    }
     public function circumference()
     {
         return (4*$this->width);

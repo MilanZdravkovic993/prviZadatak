@@ -7,14 +7,22 @@ class Triangle extends Shape implements Formulas{
     private $sideB;
     private $sideC;
 
-    public function __construct($name, $paramA, $paramB, $paramC)
+    public function __construct($paramA, $paramB, $paramC)
     {
-        $this->name = $name;
+        $this->name = "Triangle";
         $this->sideA = $paramA;
         $this->sideB = $paramB;
         $this->sideC = $paramC;
     }
-  
+    public function getName(){
+        if(isset($this->name)){
+            return $this->name;
+        }
+        else
+        {
+        echo "Name is not set";
+        }
+    }
     public function circumference()
     {
         return ($this->sideA + $this->sideB + $this->sideC);
