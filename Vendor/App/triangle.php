@@ -14,15 +14,7 @@ class Triangle extends Shape implements Formulas{
         $this->sideB = $paramB;
         $this->sideC = $paramC;
     }
-    public function getName(){
-        if(isset($this->name)){
-            return $this->name;
-        }
-        else
-        {
-        echo "Name is not set";
-        }
-    }
+   
     public function circumference()
     {
         return ($this->sideA + $this->sideB + $this->sideC);
