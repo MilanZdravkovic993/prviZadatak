@@ -9,7 +9,7 @@ namespace Vendor\App;
             }
             else
             {
-            echo "Name is not set";
+            return "Name is not set";
             }
         }
         
