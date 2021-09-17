@@ -20,7 +20,7 @@
  echo("\n Circumference:");
  echo ($shapeB->circumference());
  echo("\n Area:");
- echo ($shapeB->area());
+ echo (number_format($shapeB->area(),2));
  echo("\n");
 //Echoing Area and Circumference for third shape
  echo ($shapeC->name);
