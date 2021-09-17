@@ -8,10 +8,7 @@ class Circle extends Shape implements Formulas{
         $this->name = $name;
         $this->diametar = $param;
     }
-    public function getName()
-    {
-        return $this->name;
-    }
+   
     public function circumference()
     {
         return ($this->diametar * 3.14 * 2);
